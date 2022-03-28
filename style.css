@@ -38,4 +38,12 @@ html {
     display: block;
     font-size: 4rem;
   }
+
+  .playing {
+      transform: scale(1.2);
+      border-color: rgb(3, 135, 251);
+      box-shadow: 1 2 10 white;
+  }
+
+
 }

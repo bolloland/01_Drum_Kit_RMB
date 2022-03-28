@@ -17,4 +17,14 @@ window.addEventListener('keydown', function(e) {
     key.classList.add('playing')
     // same as: key.addClass('playing')
     // we defined key above, as having those class attributes, and now we are adding a new classList attribute to it called ".playing", located in our css file. 
+
+    const removeTransition = (e) => {
+        console.log(e)
+    }
+
+    //transition end event - identify all keys
+    const keys = document.querySelectorAll('.key')
+    // 'transitionend' is an event that's fired when a CSS transition is completed, callback is removeTrans which we then have to define...back up top. 
+    keys.forEach(key => key.addEventListener('transitionend', removeTransition))
+
     })

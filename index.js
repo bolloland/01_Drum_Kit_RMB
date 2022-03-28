@@ -1,2 +1,4 @@
-const background = "https://beatsure.com/wp-content/uploads/2019/10/How-To-Learn-To-Play-Drums-For-Beginners-e1572373309326.jpg"
-
+window.addEventListener('keydown', function(e) {
+    const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`)
+    console.log(e, audio)
+    })

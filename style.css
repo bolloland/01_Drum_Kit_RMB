@@ -19,7 +19,7 @@ html {
     /* ^^ padding between buttons */
     font-size: 2rem;
     padding: 1rem .4rem;
-    transition: all .05s ease;
+    transition: all .04s ease;
     width: 7rem;
     text-align: center;
     color: rgb(37, 5, 95);
@@ -40,7 +40,7 @@ html {
   }
 
   .playing {
-      transform: scale(1.1);
+      transform: scale(1.2);
       border-color: rgb(3, 135, 251);
       box-shadow: 1 2 10 white;
   }

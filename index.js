@@ -17,15 +17,16 @@ const playSound = (e) => {
     
 }
 
-    window.addEventListener('keydown', playSound) 
-    const removeTransition = (e) => {
-        // console.log(e, e.propertyName)
-        if (e.propertyName != 'transform') return //skip if it's not transformed
-        // console.log(e.target)
-        e.target.classList.remove('playing')
-    }
+const removeTransition = (e) => {
+    // console.log(e, e.propertyName)
+    if (e.propertyName != 'transform') return //skip if it's not transformed
+    // console.log(e.target)
+    e.target.classList.remove('playing')
+}
 
-    //transition end event - identify all keys
-    const keys = document.querySelectorAll('.key')
-    // 'transitionend' is an event that's fired when a CSS transition is completed, callback is removeTrans which we then have to define...back up top. 
-    keys.forEach(key => key.addEventListener('transitionend', removeTransition))
+//transition end event - identify all keys
+const keys = document.querySelectorAll('.key')
+// 'transitionend' is an event that's fired when a CSS transition is completed, callback is removeTrans which we then have to define...back up top. 
+keys.forEach(key => key.addEventListener('transitionend', removeTransition))
+
+window.addEventListener('keydown', playSound) 
